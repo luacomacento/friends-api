@@ -2,7 +2,7 @@
 
 module.exports = {
   async up (queryInterface, Sequelize) {
-    await queryInterface.bulkInsert('characters', [
+    await queryInterface.bulkInsert('episodes', [
       {
         title: 'The One Where Monica Gets A New Roommate',
         created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
@@ -67,6 +67,6 @@ module.exports = {
   },
 
   async down (queryInterface, Sequelize) {
-    await queryInterface.bulkDelete('jobs', null);
+    await queryInterface.bulkDelete('episodes', null);
   }
 };

@@ -3,6 +3,8 @@ module.exports = (sequelize, DataTypes) => {
     jobId: {
       type: DataTypes.INTEGER,
       primaryKey: true,
+      autoIncrement: true,
+      allowNull: false,
     },
     jobTitle: DataTypes.STRING,
   }, {

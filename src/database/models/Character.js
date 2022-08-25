@@ -3,6 +3,8 @@ module.exports = (sequelize, DataTypes) => {
     characterId: {
       type: DataTypes.INTEGER,
       primaryKey: true,
+      autoIncrement: true,
+      allowNull: false,
     },
     firstName: DataTypes.STRING,
     lastName: DataTypes.STRING,

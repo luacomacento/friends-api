@@ -21,6 +21,10 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
         foreignKey: true,
+        references: {
+          model: 'jobs',
+          key: 'job_id'
+        }
       },
       created_at: {
         type: Sequelize.DATE,
