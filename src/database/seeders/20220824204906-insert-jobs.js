@@ -9,6 +9,9 @@ module.exports = {
       { job_title: 'professor' },
       { job_title: 'unknown' },
       { job_title: 'masseuse' },
+      { job_title: 'teacher' },
+      { job_title: 'commercial director' },
+      { job_title: 'monkey' }
     ])
   },
 
